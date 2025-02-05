@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efabdba7c7a9ffb41885d3b717ca3df2, type: 3}
+  m_Name: Cursed Swamp Pizza
+  m_EditorClassIdentifier: 
+  recipeName: Cursed Swamp Pizza
+  ingredients:
+  - ingredients: {fileID: 11400000, guid: 1367ee56b63ab2749af3dd22064e5d10, type: 2}
+    quantity: 1
+  - ingredients: {fileID: 11400000, guid: 5bb482228be92b64a926ade9f8270501, type: 2}
+    quantity: 1
+  - ingredients: {fileID: 11400000, guid: 8b18ffc844c60fe49b3f792857f101ab, type: 2}
+    quantity: 1
+  - ingredients: {fileID: 11400000, guid: 37796bdb4ec909848b3bcae822bad838, type: 2}
+    quantity: 1
+  - ingredients: {fileID: 11400000, guid: 420846525511e184fa03130440ef622e, type: 2}
+    quantity: 1
