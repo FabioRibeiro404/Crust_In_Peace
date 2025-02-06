@@ -1,17 +1,22 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Profiling;
 
 public class NPC : MonoBehaviour
 {
-    [SerializeField] private Transform balcony;
-    private NPC_Order npcOrder;
     private NavMeshAgent agent;
+    private NPCOrder npcOrder;
 
-    private void Start()
+    private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        npcOrder = GetComponent<NPC_Order>();
+        npcOrder = GetComponent<NPCOrder>();
+        
+    }
+
+    public void GoToBalcony(Transform balcony)
+    {
+        if (agent == null || balcony == null) return;
         agent.SetDestination(balcony.position);
     }
 
@@ -19,9 +24,5 @@ public class NPC : MonoBehaviour
     {
         if (other.name == "Trigger Order")
             npcOrder.SelectRandomRecipe();
-    }
-    private void UpdateDestination()
-    {
-        agent.SetDestination(balcony.position);
     }
 }

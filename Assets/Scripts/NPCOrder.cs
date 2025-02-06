@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC_Order : MonoBehaviour
+public class NPCOrder : MonoBehaviour
 {
     [SerializeField] private List<RecipesData> _allRecipes;
     private RecipesData _choosedOrder;
@@ -16,7 +16,7 @@ public class NPC_Order : MonoBehaviour
             ShowSelectedRecipe();
         }
         else
-            Debug.LogError("Nenhuma receita disponível!");
+            Debug.LogError("Nenhuma receita disponï¿½vel!");
     }
 
     private void ShowSelectedRecipe()
