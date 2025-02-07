@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.Profiling;
 
 public class NPCOrder : MonoBehaviour
 {
+    [SerializeField] private UIManager manager;
     [SerializeField] private List<RecipesData> _allRecipes;
     private RecipesData _choosedOrder;
 
@@ -16,7 +19,7 @@ public class NPCOrder : MonoBehaviour
             ShowSelectedRecipe();
         }
         else
-            Debug.LogError("Nenhuma receita dispon�vel!");
+            Debug.LogError("Nenhuma receita disponível!");
     }
 
     private void ShowSelectedRecipe()
@@ -26,12 +29,14 @@ public class NPCOrder : MonoBehaviour
             Debug.Log("Receita: " + _choosedOrder.recipeName);
             foreach (var ingredient in _choosedOrder.ingredients)
                 Debug.Log("Ingrediente: " + ingredient.ingredients.name + " | Quantidade: " + ingredient.quantity);
+
+            manager.ShowOrder(_choosedOrder);
         }
         else
             Debug.LogError("Nenhuma receita foi selecionada.");
     }
 
-    /*private void CheckIfOrderCorrect()
+    /*private void CheckOrder()
     {
 
     }*/

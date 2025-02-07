@@ -11,6 +11,7 @@ public class RecipesData : ScriptableObject
         public int quantity; 
     }
 
+    public Sprite recipeIcon;
     public string recipeName;
     public List<IngredientAmount> ingredients;
 }

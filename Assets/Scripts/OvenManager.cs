@@ -8,15 +8,28 @@ public class OvenManager : MonoBehaviour
     private float cookingTime = 10f;
 
     private Renderer materialPizza;
+    private Coroutine cookingCoroutine;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Pizza") && oven.isOn)
         {
             materialPizza = other.GetComponent<Renderer>();
 
             if (materialPizza != null && materialPizza.material.color != endColor)
-                StartCoroutine(Cooking(other.gameObject));
+            {
+                if (cookingCoroutine == null)
+                    cookingCoroutine = StartCoroutine(Cooking(other.gameObject));
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Pizza") && cookingCoroutine != null)
+        {
+            StopCoroutine(cookingCoroutine);
+            cookingCoroutine = null;
         }
     }
 
@@ -29,6 +42,12 @@ public class OvenManager : MonoBehaviour
 
         while (elapsedTime < cookingTime)
         {
+            if (!oven.isOn)
+            {
+                cookingCoroutine = null;
+                yield break;
+            }
+
             elapsedTime += Time.deltaTime;
             float progress = elapsedTime / cookingTime;
             materialPizza.material.color = Color.Lerp(startColor, endColor, progress);
@@ -38,5 +57,6 @@ public class OvenManager : MonoBehaviour
         Debug.Log("COOK");
         materialPizza.material.color = endColor;
         oven.isOn = false;
+        cookingCoroutine = null;
     }
 }
