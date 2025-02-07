@@ -4,12 +4,15 @@ using UnityEngine.XR.Content.Interaction;
 
 public class ButtonOnOff : MonoBehaviour
 {
+    [SerializeField] private Light _overLight;
     [SerializeField] private Animator _doorAnimator;
-    private bool isOn;
+    public bool isOn;
 
     private void Start()
     {
         isOn = false;
+
+        TurnOff();
     }
 
     public void ChangeButton()
@@ -20,11 +23,14 @@ public class ButtonOnOff : MonoBehaviour
         {
             if (_doorAnimator != null)
                 StartCoroutine(PlayDoorAnimation("DoorOpen"));
+            else if (_overLight != null)
+                _overLight.enabled = true;
         }
         else
         {
             if (_doorAnimator != null)
                 StartCoroutine(PlayDoorAnimation("DoorClose"));
+            TurnOff();
         }
 
         Debug.Log("Botão pressionado! Estado: " + (isOn ? "Ligado" : "Desligado"));
@@ -38,5 +44,11 @@ public class ButtonOnOff : MonoBehaviour
         yield return new WaitForSeconds(animationDuration);
 
         Debug.Log("Animação " + animationName + " concluída!");
+    }
+
+    private void TurnOff()
+    {
+        if (_overLight != null)
+            _overLight.enabled = false;
     }
 }
