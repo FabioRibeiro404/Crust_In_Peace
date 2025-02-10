@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3767db711413341a053aa426f6f41c, type: 3}
   m_Name: Brain
   m_EditorClassIdentifier: 
+  ingredientIcon: {fileID: 21300000, guid: 2eafcf7d76d31894e91c8b28dc5c5aea, type: 3}
   ingredientName: Brain

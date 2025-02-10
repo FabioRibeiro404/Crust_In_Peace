@@ -32,7 +32,7 @@ public class NPCSpawner : MonoBehaviour
     private void SpawnRandomNPC()
     {
         int randomIndex = Random.Range(0, npcPrefabs.Length);
-        GameObject npcObj = Instantiate(npcPrefabs[randomIndex], spawnPoint.position, Quaternion.identity);
+        GameObject npcObj = Instantiate(npcPrefabs[randomIndex], spawnPoint.position, Quaternion.Euler(0, 180, 0));
         NPC newNPC = npcObj.GetComponent<NPC>();
 
         npcQueue.Enqueue(newNPC);

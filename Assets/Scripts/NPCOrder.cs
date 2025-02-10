@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.Profiling;
 
 public class NPCOrder : MonoBehaviour
 {
@@ -36,8 +34,23 @@ public class NPCOrder : MonoBehaviour
             Debug.LogError("Nenhuma receita foi selecionada.");
     }
 
-    /*private void CheckOrder()
+    public bool CheckOrder(RecipesData deliveredOrder)
     {
+        if (_choosedOrder == null)
+        {
+            Debug.LogError("Nenhum pedido foi feito ainda!");
+            return false;
+        }
 
-    }*/
+        if (deliveredOrder == _choosedOrder)
+        {
+            Debug.Log("Pedido correto! Cliente satisfeito.");
+            return true;
+        }
+        else
+        {
+            Debug.Log("Pedido errado! Cliente insatisfeito.");
+            return false;
+        }
+    }
 }

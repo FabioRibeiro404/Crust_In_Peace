@@ -6,11 +6,18 @@ public class NPC : MonoBehaviour
 {
     private NavMeshAgent agent;
     private NPCOrder npcOrder;
+    private Animator animator;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         npcOrder = GetComponent<NPCOrder>();
+        animator = GetComponent<Animator>();
+    }
+    private void Update()
+    {
+        if (agent != null && animator != null)
+            animator.SetBool("isWalking", agent.velocity.magnitude > 0.1f);
     }
 
     public void GoToBalcony(Transform balcony)
@@ -19,14 +26,4 @@ public class NPC : MonoBehaviour
         agent.SetDestination(balcony.position);
         npcOrder.SelectRandomRecipe();
     }
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.name == "Trigger Order")
-        {
-
-            Debug.Log("Pode pedir");
-            npcOrder.SelectRandomRecipe();
-        }
-    }*/
 }
