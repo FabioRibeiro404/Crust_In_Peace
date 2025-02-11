@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class RollingManager : MonoBehaviour
 {
-    [SerializeField] private GameObject dought;
+    private GameObject dought;
     [SerializeField] private GameObject pizzaBase;
     private XRGrabInteractable grabInteractable;
     private HashSet<XRBaseInteractor> interactors = new HashSet<XRBaseInteractor>();
@@ -34,6 +34,7 @@ public class RollingManager : MonoBehaviour
     {
         if (other.CompareTag("Dough") && interactors.Count == 2)
         {
+            dought = other.gameObject;
             Instantiate(pizzaBase, dought.transform.position, Quaternion.identity);
             Destroy(dought);
 

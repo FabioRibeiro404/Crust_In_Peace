@@ -970,7 +970,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
   m_Resource: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -11825,6 +11825,7 @@ GameObject:
   - component: {fileID: 591477838}
   - component: {fileID: 591477839}
   - component: {fileID: 591477840}
+  - component: {fileID: 591477841}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -11883,6 +11884,104 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particles: {fileID: 388285599}
+  sound: {fileID: 8300000, guid: 6401e3277b27cd4418d1990b67d51db0, type: 3}
+--- !u!82 &591477841
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591477837}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1.5
+  MaxDistance: 2.5
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &635738219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12206,9 +12305,10 @@ GameObject:
   - component: {fileID: 662044274}
   - component: {fileID: 662044276}
   - component: {fileID: 662044275}
+  - component: {fileID: 662044277}
   m_Layer: 0
   m_Name: Sauce Particles
-  m_TagString: Untagged
+  m_TagString: Sauce Ectoplasm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16068,7 +16168,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -17028,6 +17128,22 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &662044277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662044273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd795534cf769c8498e5a5ec3f69dbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ectoplasmPizza: {fileID: 5359573972603843716, guid: 53bba8c95851d8b4fabc521d34ee3ffc, type: 3}
+  bloodPizza: {fileID: 5359573972603843716, guid: cf8acaf686251324b9ff8d0a78ea70ad, type: 3}
+  hellPizza: {fileID: 5359573972603843716, guid: bb8a4ca1c5db5524bab4f1de479aa233, type: 3}
+  swampPizza: {fileID: 5359573972603843716, guid: 33b3576ae9cd35e43832e65484a6d166, type: 3}
 --- !u!1 &704960717
 GameObject:
   m_ObjectHideFlags: 0
@@ -30316,7 +30432,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
   m_Resource: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -31080,7 +31196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9249d0642d1f8d4694e15c0daa2a9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dought: {fileID: 0}
   pizzaBase: {fileID: 5359573972603843716, guid: 2cecf00936c19794ebc496d9c12269a5, type: 3}
 --- !u!114 &1565681530
 MonoBehaviour:
@@ -31752,7 +31867,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
   m_Resource: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -32970,7 +33085,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
   m_Resource: {fileID: 8300000, guid: f334868202d5f1041955b22d3e48e8ca, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
