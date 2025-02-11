@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Pizza
   - Dough
+  - Sauce Ectoplasm
+  - Sauce Blood
+  - Sauce Hell blood
+  - Sauce Swap Mud
   layers:
   - Default
   - TransparentFX
