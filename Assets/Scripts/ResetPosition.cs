@@ -21,7 +21,7 @@ public class ResetPosition : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void ResetObject()
+    private void ResetObject()
     {
         transform.position = initialPosition;
         transform.rotation = initialRotation;
