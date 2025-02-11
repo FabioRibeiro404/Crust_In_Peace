@@ -362,6 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8999248266584798509}
   - component: {fileID: 450192066366714086}
+  - component: {fileID: -550946372467221420}
   m_Layer: 0
   m_Name: Eye Pieces
   m_TagString: Untagged
@@ -409,3 +410,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.06, y: 0.06, z: 0.06}
   m_Center: {x: 0.01, y: 0, z: -0.01}
+--- !u!114 &-550946372467221420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8851858052704299678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8288fd058e85a948bfb10a86a740c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5

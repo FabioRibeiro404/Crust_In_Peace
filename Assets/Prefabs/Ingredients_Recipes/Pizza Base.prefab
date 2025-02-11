@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5691865799047210643}
   - component: {fileID: 8750293049442640297}
   - component: {fileID: 9135710355529736862}
-  - component: {fileID: 6890040074520472948}
+  - component: {fileID: 8275953225174512892}
   m_Layer: 0
   m_Name: Pizza Base
   m_TagString: Pizza
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &6890040074520472948
+--- !u!114 &8275953225174512892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,11 +270,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5359573972603843716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8253cf6c499c2c34e97a20316fe05c0c, type: 3}
+  m_Script: {fileID: 11500000, guid: e8288fd058e85a948bfb10a86a740c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientsData: {fileID: 11400000, guid: 1367ee56b63ab2749af3dd22064e5d10, type: 2}
-  recipesData: {fileID: 0}
+  maxDistance: 5
 --- !u!1 &6021338728324263961
 GameObject:
   m_ObjectHideFlags: 0

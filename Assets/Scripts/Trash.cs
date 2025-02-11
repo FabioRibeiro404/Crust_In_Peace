@@ -6,5 +6,6 @@ public class Trash : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _particles.Play();
+        Destroy(other.gameObject);
     }
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4563528538586300207}
   - component: {fileID: 7458643967032454377}
+  - component: {fileID: 5610817565417550924}
   m_Layer: 0
   m_Name: Bugs Pieces
   m_TagString: Untagged
@@ -56,6 +57,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05, y: 0.05, z: 0.05}
   m_Center: {x: 0.01, y: 0, z: -0.015}
+--- !u!114 &5610817565417550924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4343669108820279546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8288fd058e85a948bfb10a86a740c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5
 --- !u!1 &5332375554037351605
 GameObject:
   m_ObjectHideFlags: 0

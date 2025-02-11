@@ -182,6 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2556537364153516312}
   - component: {fileID: 2141899362821202001}
+  - component: {fileID: -7634789539025605648}
   m_Layer: 0
   m_Name: Brain Pieces
   m_TagString: Untagged
@@ -228,6 +229,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05, y: 0.05, z: 0.05}
   m_Center: {x: 0.01, y: 0, z: 0.01}
+--- !u!114 &-7634789539025605648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528273547474637907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8288fd058e85a948bfb10a86a740c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5
 --- !u!1 &9186904617587684874
 GameObject:
   m_ObjectHideFlags: 0

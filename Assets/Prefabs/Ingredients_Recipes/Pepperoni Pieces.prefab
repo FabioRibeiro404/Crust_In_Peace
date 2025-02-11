@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9071579181220161791}
   - component: {fileID: 8376754667337117011}
+  - component: {fileID: -1223254056878876122}
   m_Layer: 0
   m_Name: Pepperoni Pieces
   m_TagString: Untagged
@@ -314,3 +315,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1147784, y: 0.057088405, z: 0.11039777}
   m_Center: {x: -0.101368204, y: 0.12294607, z: -0.09203868}
+--- !u!114 &-1223254056878876122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187869477177884075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8288fd058e85a948bfb10a86a740c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5

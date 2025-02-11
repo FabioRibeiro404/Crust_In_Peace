@@ -97,6 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3434951883290478806}
   - component: {fileID: 3493656842244927962}
+  - component: {fileID: 3398249073666544335}
   m_Layer: 0
   m_Name: Fingers Pieces
   m_TagString: Untagged
@@ -143,6 +144,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0590048, y: 1, z: 2.1232924}
   m_Center: {x: -0.05705096, y: 0, z: 0.016449718}
+--- !u!114 &3398249073666544335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704728375717712644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8288fd058e85a948bfb10a86a740c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5
 --- !u!1 &7525716708472737468
 GameObject:
   m_ObjectHideFlags: 0
