@@ -184,8 +184,8 @@ GameObject:
   - component: {fileID: 1788497224166706563}
   - component: {fileID: 4281598687367484729}
   m_Layer: 0
-  m_Name: Cheese Pieces
-  m_TagString: Untagged
+  m_Name: Cheeses
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

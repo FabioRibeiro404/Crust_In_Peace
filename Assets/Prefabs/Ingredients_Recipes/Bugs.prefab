@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7458643967032454377}
   - component: {fileID: 5610817565417550924}
   m_Layer: 0
-  m_Name: Bugs Pieces
-  m_TagString: Untagged
+  m_Name: Bugs
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

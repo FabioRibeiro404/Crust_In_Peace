@@ -409,6 +409,7 @@ GameObject:
   - component: {fileID: 7066210727852527379}
   - component: {fileID: 4031323908308408984}
   - component: {fileID: 5691994351989342884}
+  - component: {fileID: 4879518089069478744}
   m_Layer: 0
   m_Name: Pizza Box
   m_TagString: PizzaBox
@@ -638,3 +639,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.45586956, y: 0.013690114, z: 0.551569}
   m_Center: {x: -0.025413573, y: -0.008194864, z: -0.039551735}
+--- !u!114 &4879518089069478744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7138012315661948012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8288fd058e85a948bfb10a86a740c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5
