@@ -23,7 +23,6 @@ public class PizzaBoxManager : MonoBehaviour
         {
             currentBox = Instantiate(boxPrefab, spawnPoint.position, Quaternion.identity);
             boxAnimator = currentBox.GetComponent<Animator>();
-            boxAnimator.SetTrigger("Open");
         }
     }
 }

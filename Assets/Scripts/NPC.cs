@@ -23,9 +23,7 @@ public class NPC : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         if (audioSource == null)
-        {
             audioSource = gameObject.AddComponent<AudioSource>();
-        }
     }
 
     private void Start()
@@ -45,6 +43,16 @@ public class NPC : MonoBehaviour
         agent.SetDestination(balcony.position);
         npcOrder.SelectRandomRecipe();
     }
+
+    public void GoExit(Transform exitPoint)
+    {
+        if (agent == null || exitPoint == null) return;
+
+        agent.SetDestination(exitPoint.position);
+        Debug.Log("NPC indo para a saída...");
+    }
+
+
 
     private IEnumerator PlayRandomSound()
     {

@@ -34,23 +34,8 @@ public class NPCOrder : MonoBehaviour
             Debug.LogError("Nenhuma receita foi selecionada.");
     }
 
-    public bool CheckOrder(RecipesData deliveredOrder)
-    {
-        if (_choosedOrder == null)
-        {
-            Debug.LogError("Nenhum pedido foi feito ainda!");
-            return false;
-        }
-
-        if (deliveredOrder == _choosedOrder)
-        {
-            Debug.Log("Pedido correto! Cliente satisfeito.");
-            return true;
-        }
-        else
-        {
-            Debug.Log("Pedido errado! Cliente insatisfeito.");
-            return false;
-        }
+    public RecipesData GetChoosedOrder()
+    { 
+        return _choosedOrder; 
     }
 }

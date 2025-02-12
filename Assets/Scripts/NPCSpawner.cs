@@ -7,11 +7,12 @@ public class NPCSpawner : MonoBehaviour
     [SerializeField] private GameObject[] npcPrefabs;
     [SerializeField] private Transform balcony;
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Transform exitPoint;
     [SerializeField] private float spawnInterval = 5f;
     [SerializeField] private int maxNPCs = 5;
 
     private Queue<NPC> npcQueue = new Queue<NPC>();
-    private NPC currentNPC;
+    public NPC currentNPC;
 
     private void Start()
     {
@@ -57,9 +58,12 @@ public class NPCSpawner : MonoBehaviour
             currentNPC.GoToBalcony(balcony);
     }
 
-    public void OnNPCFinished()
+
+    public void ExitNPCMovement()
     {
-        currentNPC = null;
-        MoveNextNPC();
+        if (currentNPC != null)
+            currentNPC.GoExit(exitPoint);
     }
+
+
 }

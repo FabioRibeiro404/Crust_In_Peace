@@ -1,29 +1,39 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class PizzaBox : MonoBehaviour
 {
-    private Animator animator;
-    private RecipesData currentRecipe;
+    private Animator _animator;
+    private AttributeRecipe currentRecipe;
+    private XRSocketInteractor socketInteractor;
+
     private void Start()
     {
-        animator = GetComponent<Animator>();
-        animator.SetTrigger("Open");
+        _animator = GetComponent<Animator>();
+        socketInteractor = GetComponentInChildren<XRSocketInteractor>();
     }
 
-    private void OnTriggerStay(Collider other)
+    public void OnPizzaPlaced(SelectEnterEventArgs args)
     {
-        if (other.CompareTag("Pizza"))
+        GameObject pizza = args.interactableObject.transform.gameObject;
+
+        if (pizza.CompareTag("Pizza"))
         {
-            currentRecipe = other.GetComponent<RecipesData>();
-            animator.SetTrigger("Close");
-            Destroy(gameObject);
-            Destroy(other.gameObject, 2f);
+            currentRecipe = pizza.GetComponent<AttributeRecipe>();
+            Debug.Log("PIZZA DENTRO DA CAIXA É: " + currentRecipe._recipe.name);
+
+            pizza.transform.SetParent(this.transform);
+
+            _animator.SetTrigger("Close");
+
+            Collider collider = pizza.GetComponent<Collider>();
+            collider.enabled = false;
         }
     }
 
-
     public RecipesData GetRecipe()
     {
-        return currentRecipe;
+        return currentRecipe._recipe;
     }
 }

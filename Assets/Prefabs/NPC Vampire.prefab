@@ -1791,6 +1791,7 @@ GameObject:
   - component: {fileID: 4452887536812517616}
   - component: {fileID: 8005090506628826807}
   - component: {fileID: -4605923355627339076}
+  - component: {fileID: 8026856653617350961}
   m_Layer: 0
   m_Name: NPC Vampire
   m_TagString: Untagged
@@ -1828,12 +1829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde360684d15c254c8307824027a11f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 8606366774430456848}
   _allRecipes:
   - {fileID: 11400000, guid: 1b1d9addcfbd0d84f93b460a1c2ff98d, type: 2}
-  - {fileID: 11400000, guid: 2924f192ee68cf146ae9d388ace62639, type: 2}
-  - {fileID: 11400000, guid: 152867953954592428cc74275ad2efe3, type: 2}
-  - {fileID: 11400000, guid: 0c7108d7313ca3f4591b0855358e2225, type: 2}
 --- !u!114 &4451861357537455544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,6 +1992,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!136 &8026856653617350961
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5941536085533742549}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2.307857
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.6539285, z: 0}
 --- !u!1 &6045229435854078645
 GameObject:
   m_ObjectHideFlags: 0

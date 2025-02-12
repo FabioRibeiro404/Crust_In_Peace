@@ -2,14 +2,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class Trash : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _particles;
-    [SerializeField] private AudioClip sound; // Som único
+    [SerializeField] private AudioClip sound;
 
     private AudioSource audioSource;
 
@@ -18,9 +14,7 @@ public class Trash : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         if (audioSource == null)
-        {
             audioSource = gameObject.AddComponent<AudioSource>();
-        }
     }
 
     private void OnTriggerEnter(Collider other)

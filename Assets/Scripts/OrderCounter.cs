@@ -2,25 +2,37 @@ using UnityEngine;
 
 public class OrderCounter : MonoBehaviour
 {
-    [SerializeField] private NPCOrder npcOrder;
-
     private void OnTriggerEnter(Collider other)
     {
-        PizzaBox orderHolder = other.GetComponent<PizzaBox>();
+        if (!other.CompareTag("PizzaBox")) return;
 
-        if (orderHolder != null)
+        PizzaBox pizzaBox = other.GetComponent<PizzaBox>();
+        RecipesData pizzaRecipe = pizzaBox.GetRecipe();
+
+        // Tenta encontrar o NPC que está no mesmo trigger
+        NPCOrder npcOrder = other.GetComponentInParent<NPCOrder>();
+        if (npcOrder == null)
         {
-            bool isCorrect = npcOrder.CheckOrder(orderHolder.GetRecipe());
+            Debug.Log("Erro: Nenhum NPC encontrado no trigger.");
+            return;
+        }
 
-            if (isCorrect)
-            {
-                Debug.Log("Entrega confirmada!");
-                // Aqui você pode adicionar lógica extra, como recompensas ou remoção do NPC
-            }
-            else
-            {
-                Debug.Log("O pedido não corresponde ao solicitado.");
-            }
+        RecipesData npcRecipe = npcOrder.GetChoosedOrder();
+
+        if (pizzaRecipe == null || npcRecipe == null)
+        {
+            Debug.Log("Erro: Pedido ou pizza inválidos.");
+            return;
+        }
+
+        if (pizzaRecipe.recipeName == npcRecipe.recipeName)
+        {
+            FindObjectOfType<NPCSpawner>().ExitNPCMovement();
+            Debug.Log("Entrega correta!");
+        }
+        else
+        {
+            Debug.Log("Pizza errada!");
         }
     }
 }
