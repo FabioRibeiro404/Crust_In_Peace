@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class NPCSpawner : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class NPCSpawner : MonoBehaviour
 
     private Queue<NPC> npcQueue = new Queue<NPC>();
     public NPC currentNPC;
+    private GameObject npcObj;
 
     private void Start()
     {
@@ -33,7 +35,7 @@ public class NPCSpawner : MonoBehaviour
     private void SpawnRandomNPC()
     {
         int randomIndex = Random.Range(0, npcPrefabs.Length);
-        GameObject npcObj = Instantiate(npcPrefabs[randomIndex], spawnPoint.position, Quaternion.Euler(0, 180, 0));
+        npcObj = Instantiate(npcPrefabs[randomIndex], spawnPoint.position, Quaternion.Euler(0, 180, 0));
         NPC newNPC = npcObj.GetComponent<NPC>();
 
         npcQueue.Enqueue(newNPC);
@@ -63,6 +65,8 @@ public class NPCSpawner : MonoBehaviour
     {
         if (currentNPC != null)
             currentNPC.GoExit(exitPoint);
+
+        currentNPC = null;
     }
 
 

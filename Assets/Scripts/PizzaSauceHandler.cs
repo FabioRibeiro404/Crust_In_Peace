@@ -2,25 +2,16 @@ using UnityEngine;
 
 public class PizzaSauceHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject ectoplasmPizza;
-    [SerializeField] private GameObject bloodPizza;
-    [SerializeField] private GameObject hellPizza;
-    [SerializeField] private GameObject swampPizza;
-
     void OnParticleCollision(GameObject other)
     {
-        GameObject newPizzaPrefab = null;
-
         if (other.CompareTag("Pizza"))
         {
-            if (gameObject.CompareTag("Sauce Ectoplasm"))
-                newPizzaPrefab = ectoplasmPizza;
-        }
+            foreach (Transform child in other.transform)
+            {
+                if (gameObject.CompareTag("Sauce Ectoplasm") && child.name.Equals("Sauce Ectoplasm"))
+                    child.gameObject.SetActive(true);
 
-        if (newPizzaPrefab != null)
-        {
-            GameObject newPizza = Instantiate(newPizzaPrefab, transform.position, Quaternion.identity);
-            Destroy(other.gameObject);
+            }
         }
     }
 }

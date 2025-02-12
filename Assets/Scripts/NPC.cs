@@ -49,7 +49,6 @@ public class NPC : MonoBehaviour
         if (agent == null || exitPoint == null) return;
 
         agent.SetDestination(exitPoint.position);
-        Debug.Log("NPC indo para a saída...");
     }
 
 

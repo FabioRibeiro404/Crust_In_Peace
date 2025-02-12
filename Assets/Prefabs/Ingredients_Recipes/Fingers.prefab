@@ -99,8 +99,8 @@ GameObject:
   - component: {fileID: 3493656842244927962}
   - component: {fileID: 3398249073666544335}
   m_Layer: 0
-  m_Name: Fingers Pieces
-  m_TagString: Untagged
+  m_Name: Fingers
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

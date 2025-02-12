@@ -21,6 +21,7 @@ public class PizzaBox : MonoBehaviour
         if (pizza.CompareTag("Pizza"))
         {
             currentRecipe = pizza.GetComponent<AttributeRecipe>();
+
             Debug.Log("PIZZA DENTRO DA CAIXA É: " + currentRecipe._recipe.name);
 
             pizza.transform.SetParent(this.transform);
