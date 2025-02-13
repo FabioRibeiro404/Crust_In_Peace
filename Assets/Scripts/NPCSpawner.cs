@@ -67,7 +67,10 @@ public class NPCSpawner : MonoBehaviour
             currentNPC.GoExit(exitPoint);
 
         currentNPC = null;
+
+        MoveNextNPC();
     }
+
 
 
 }
