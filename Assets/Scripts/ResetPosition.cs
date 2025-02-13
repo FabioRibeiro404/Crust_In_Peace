@@ -15,7 +15,7 @@ public class ResetPosition : MonoBehaviour
     void Update()
     {
         if (Vector3.Distance(transform.position, initialPosition) > maxDistance 
-            && gameObject.CompareTag("Sauces") || gameObject.CompareTag("Roll")
+            || gameObject.CompareTag("Roll")
             || gameObject.CompareTag("PizzaBox"))
             ResetObject();
         else if (transform.position.y <= 0.20f)

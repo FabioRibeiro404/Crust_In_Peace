@@ -32,8 +32,12 @@ public class OrderCounter : MonoBehaviour
                 FindObjectOfType<NPCSpawner>().ExitNPCMovement();
                 Debug.Log("Entrega correta!");
 
+                foreach (Transform child in other.transform)
+                {
+                    if (child.name.Contains("Pizza Base"))
+                        Destroy(child.gameObject);
+                }
                 Destroy(other.gameObject);
-                Destroy(gameObject);
             }
             else
                 Debug.Log("Pizza errada!");

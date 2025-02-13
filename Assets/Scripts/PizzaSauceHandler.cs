@@ -4,7 +4,7 @@ public class PizzaSauceHandler : MonoBehaviour
 {
     void OnParticleCollision(GameObject other)
     {
-        if (other.CompareTag("Pizza"))
+        if (other.CompareTag("Pizza") || other.CompareTag("Ingredients"))
         {
             foreach (Transform child in other.transform)
             {
@@ -20,7 +20,6 @@ public class PizzaSauceHandler : MonoBehaviour
                 if (gameObject.CompareTag("Sauce Blood") && child.name.Equals("Sauce Blood"))
                     child.gameObject.SetActive(true);
             }
-
         }
     }
 }
