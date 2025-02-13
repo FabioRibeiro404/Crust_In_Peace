@@ -12,7 +12,10 @@ public class PizzaSauceHandler : MonoBehaviour
             foreach (Transform child in other.transform)
             {
                 if (gameObject.CompareTag("Sauce Ectoplasm") && child.name.Equals("Sauce Ectoplasm"))
+                {
                     child.gameObject.SetActive(true);
+                    Debug.LogWarning("Particulas colidem");
+                }
 
                 if (gameObject.CompareTag("Sauce Swap Mud") && child.name.Equals("Sauce Swap Mud"))
                     child.gameObject.SetActive(true);
@@ -23,6 +26,7 @@ public class PizzaSauceHandler : MonoBehaviour
                 if (gameObject.CompareTag("Sauce Blood") && child.name.Equals("Sauce Blood"))
                     child.gameObject.SetActive(true);
             }
+
         }
     }
 }
