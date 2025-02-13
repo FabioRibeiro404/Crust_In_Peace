@@ -33,6 +33,7 @@ public class OrderCounter : MonoBehaviour
                 Debug.Log("Entrega correta!");
 
                 Destroy(other.gameObject);
+                Destroy(gameObject);
             }
             else
                 Debug.Log("Pizza errada!");
