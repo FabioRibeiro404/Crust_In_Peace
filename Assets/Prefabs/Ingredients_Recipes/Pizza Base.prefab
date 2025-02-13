@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3381528926205858593}
   - component: {fileID: 129158836069703775}
   - component: {fileID: 3275031383119613284}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3381528926205858593
 Transform:
@@ -97,12 +97,12 @@ GameObject:
   - component: {fileID: 4814492335962892977}
   - component: {fileID: 6192681324426708583}
   - component: {fileID: 8334528199608279259}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4814492335962892977
 Transform:
@@ -188,7 +188,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3262269751150518117
 Transform:
@@ -274,7 +274,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5610916399513074584
 Transform:
@@ -355,12 +355,12 @@ GameObject:
   - component: {fileID: 8667228990085314816}
   - component: {fileID: 4872117643374463576}
   - component: {fileID: 7221594336524250359}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sauce Blood from Hell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &8667228990085314816
 Transform:
@@ -371,7 +371,7 @@ Transform:
   m_GameObject: {fileID: 317039434541347718}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.26, y: 0.42009997, z: 2.0331135}
+  m_LocalPosition: {x: 0, y: 0.01240003, z: 0}
   m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -430,6 +430,92 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &455497547725423405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4630707529181886520}
+  - component: {fileID: 242671874987862693}
+  - component: {fileID: 405832234865306608}
+  m_Layer: 7
+  m_Name: Sauce Blood
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 0
+--- !u!4 &4630707529181886520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455497547725423405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.01240003, z: 0}
+  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 6310848494344326390}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &242671874987862693
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455497547725423405}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &405832234865306608
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455497547725423405}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b814262e34648ce4dab7170bdf6f1d42, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &497410017731074130
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,12 +527,12 @@ GameObject:
   - component: {fileID: 985434453329609448}
   - component: {fileID: 4180234354102603085}
   - component: {fileID: 2154932524138854791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &985434453329609448
 Transform:
@@ -527,12 +613,12 @@ GameObject:
   - component: {fileID: 249018762032797798}
   - component: {fileID: 3808755196357531587}
   - component: {fileID: 1387000804396802825}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &249018762032797798
 Transform:
@@ -619,7 +705,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6930199338997027838
 Transform:
@@ -699,12 +785,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2456180802704280766}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bugs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &2456180802704280766
 Transform:
@@ -747,7 +833,7 @@ GameObject:
   m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6310848494344326390
 Transform:
@@ -766,6 +852,7 @@ Transform:
   - {fileID: 5589552307539377859}
   - {fileID: 7677836630070909092}
   - {fileID: 8667228990085314816}
+  - {fileID: 4630707529181886520}
   - {fileID: 6259626720345897906}
   - {fileID: 4107876595038973884}
   - {fileID: 8353045224658388973}
@@ -1000,12 +1087,12 @@ GameObject:
   - component: {fileID: 4289326562242394106}
   - component: {fileID: 7819335829770047295}
   - component: {fileID: 4475186139107269387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brain Pieces (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4289326562242394106
 Transform:
@@ -1089,7 +1176,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &592646400286882476
 Transform:
@@ -1122,7 +1209,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7122660966081845872
 Transform:
@@ -1203,12 +1290,12 @@ GameObject:
   - component: {fileID: 4607996752622924677}
   - component: {fileID: 221290715614780308}
   - component: {fileID: 7507703783522896968}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brain Pieces (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4607996752622924677
 Transform:
@@ -1294,7 +1381,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5214874130436157375
 Transform:
@@ -1380,7 +1467,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3572420252779103930
 Transform:
@@ -1466,7 +1553,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &5589552307539377859
 Transform:
@@ -1547,12 +1634,12 @@ GameObject:
   - component: {fileID: 2701253370542035465}
   - component: {fileID: 648375860871543955}
   - component: {fileID: 5164848608030135511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2701253370542035465
 Transform:
@@ -1638,7 +1725,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5997831265375667846
 Transform:
@@ -1721,12 +1808,12 @@ GameObject:
   - component: {fileID: 2955038105412953373}
   - component: {fileID: 2210629792048278200}
   - component: {fileID: 4127913395040951922}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brain Pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2955038105412953373
 Transform:
@@ -1812,7 +1899,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6467562163421496760
 Transform:
@@ -1891,12 +1978,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4989513749982040836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &4989513749982040836
 Transform:
@@ -1931,12 +2018,12 @@ GameObject:
   - component: {fileID: 4425801190350368747}
   - component: {fileID: 3034686933032216703}
   - component: {fileID: 448187856014968225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bug (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4425801190350368747
 Transform:
@@ -2023,7 +2110,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &23042393367107200
 Transform:
@@ -2102,12 +2189,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4063826609826654403}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperonis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &4063826609826654403
 Transform:
@@ -2149,7 +2236,7 @@ GameObject:
   m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7758969186106503294
 Transform:
@@ -2251,12 +2338,12 @@ GameObject:
   - component: {fileID: 7598323766785591738}
   - component: {fileID: 5980914355671242521}
   - component: {fileID: 7856174501860695318}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7598323766785591738
 Transform:
@@ -2337,12 +2424,12 @@ GameObject:
   - component: {fileID: 3189663151792668831}
   - component: {fileID: 5634282654381844597}
   - component: {fileID: 4705924672031205504}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bug (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3189663151792668831
 Transform:
@@ -2427,7 +2514,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &4107876595038973884
 Transform:
@@ -2469,7 +2556,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2549073917223205507
 Transform:
@@ -2550,12 +2637,12 @@ GameObject:
   - component: {fileID: 7878879243214859191}
   - component: {fileID: 4750513295648195884}
   - component: {fileID: 1862205680834718253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brain Pieces (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7878879243214859191
 Transform:
@@ -2641,7 +2728,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5491725717398399598
 Transform:
@@ -2728,7 +2815,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &7677836630070909092
 Transform:
@@ -2814,7 +2901,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6182351649410906061
 Transform:
@@ -2902,7 +2989,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1380207490529542193
 Transform:
@@ -2990,7 +3077,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4093159106101095963
 Transform:
@@ -3073,12 +3160,12 @@ GameObject:
   - component: {fileID: 4700189431411764440}
   - component: {fileID: 8162727425008791124}
   - component: {fileID: 5134043054351437287}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4700189431411764440
 Transform:
@@ -3159,12 +3246,12 @@ GameObject:
   - component: {fileID: 3180750407591818714}
   - component: {fileID: 5337322224316587647}
   - component: {fileID: 7946338445120091649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3180750407591818714
 Transform:
@@ -3250,7 +3337,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3181505521013885940
 Transform:
@@ -3335,7 +3422,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &8353045224658388973
 Transform:
@@ -3372,12 +3459,12 @@ GameObject:
   - component: {fileID: 6927624615959520492}
   - component: {fileID: 5945025115002597685}
   - component: {fileID: 7976844754868783284}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bug (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6927624615959520492
 Transform:
@@ -3459,12 +3546,12 @@ GameObject:
   - component: {fileID: 5934102858885307933}
   - component: {fileID: 7347042839977660856}
   - component: {fileID: 4760594804610622834}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &5934102858885307933
 Transform:
@@ -3554,7 +3641,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4029013232503999185
 Transform:
@@ -3636,12 +3723,12 @@ GameObject:
   - component: {fileID: 5467071213300557493}
   - component: {fileID: 1977734440917179682}
   - component: {fileID: 7389354389759422016}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pepperoni (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5467071213300557493
 Transform:
@@ -3727,7 +3814,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1052835336227460342
 Transform:
@@ -3809,12 +3896,12 @@ GameObject:
   - component: {fileID: 4741334162906407189}
   - component: {fileID: 7928105469879465540}
   - component: {fileID: 2649456670400045577}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brain Pieces (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4741334162906407189
 Transform:
@@ -3900,7 +3987,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5012215890497531209
 Transform:
@@ -3983,12 +4070,12 @@ GameObject:
   - component: {fileID: 91799433289826591}
   - component: {fileID: 600771817731853127}
   - component: {fileID: 3645592337859091422}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brain Pieces (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &91799433289826591
 Transform:
@@ -4074,7 +4161,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1590410813332510783
 Transform:
@@ -4160,7 +4247,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1901322174274817088
 Transform:
@@ -4248,7 +4335,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &931700216159608513
 Transform:
@@ -4336,7 +4423,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9172776783577037373
 Transform:
@@ -4419,12 +4506,12 @@ GameObject:
   - component: {fileID: 5788356130011844687}
   - component: {fileID: 8089682793796685319}
   - component: {fileID: 2848665307773132631}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bug (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5788356130011844687
 Transform:
@@ -4506,12 +4593,12 @@ GameObject:
   - component: {fileID: 2147069140923886542}
   - component: {fileID: 6830384927418290222}
   - component: {fileID: 5699945718906958488}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bug (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2147069140923886542
 Transform:
@@ -4593,12 +4680,12 @@ GameObject:
   - component: {fileID: 4505030931811934145}
   - component: {fileID: 51171976498466808}
   - component: {fileID: 3429612074454634023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brain Pieces (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4505030931811934145
 Transform:
@@ -4682,7 +4769,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &6259626720345897906
 Transform:
@@ -4720,7 +4807,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6460717382240731056
 Transform:

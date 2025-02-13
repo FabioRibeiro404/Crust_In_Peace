@@ -58,5 +58,6 @@ public class OvenManager : MonoBehaviour
         materialPizza.material.color = endColor;
         oven.isOn = false;
         cookingCoroutine = null;
+        oven._overLight.enabled = false;
     }
 }

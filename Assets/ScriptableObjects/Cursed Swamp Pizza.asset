@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efabdba7c7a9ffb41885d3b717ca3df2, type: 3}
   m_Name: Cursed Swamp Pizza
   m_EditorClassIdentifier: 
-  recipeIcon: {fileID: 21300000, guid: 731e7aed8e9f540ac8bf2a7b66abdaf6, type: 3}
+  recipeIcon: {fileID: 21300000, guid: 08ae673438fc4964ab186c841c6b9c99, type: 3}
   recipeName: Cursed Swamp Pizza
   ingredients:
   - ingredients: {fileID: 11400000, guid: 1367ee56b63ab2749af3dd22064e5d10, type: 2}

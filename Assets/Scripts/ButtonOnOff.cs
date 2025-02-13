@@ -4,7 +4,7 @@ using UnityEngine.XR.Content.Interaction;
 
 public class ButtonOnOff : MonoBehaviour
 {
-    [SerializeField] private Light _overLight;
+    [SerializeField] public Light _overLight;
     [SerializeField] private Animator _doorAnimator;
     public bool isOn;
 

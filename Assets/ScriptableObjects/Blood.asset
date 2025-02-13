@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3767db711413341a053aa426f6f41c, type: 3}
   m_Name: Blood
   m_EditorClassIdentifier: 
-  ingredientIcon: {fileID: 0}
+  ingredientIcon: {fileID: 21300000, guid: b771157a9ac3b9149960f826d0c36132, type: 3}
   ingredientName: Blood

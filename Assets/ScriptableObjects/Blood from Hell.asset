@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3767db711413341a053aa426f6f41c, type: 3}
   m_Name: Blood from Hell
   m_EditorClassIdentifier: 
+  ingredientIcon: {fileID: 21300000, guid: d8b4a4f1777d2564f8d5b9ab9c6d8ea9, type: 3}
   ingredientName: Blood from Hell
