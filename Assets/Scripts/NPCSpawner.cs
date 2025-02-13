@@ -10,7 +10,7 @@ public class NPCSpawner : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Transform exitPoint;
     [SerializeField] private float spawnInterval = 5f;
-    [SerializeField] private int maxNPCs = 5;
+    [SerializeField] private int maxNPCs;
 
     private Queue<NPC> npcQueue = new Queue<NPC>();
     public NPC currentNPC;

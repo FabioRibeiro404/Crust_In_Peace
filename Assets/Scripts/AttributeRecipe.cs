@@ -40,7 +40,10 @@ public class AttributeRecipe : MonoBehaviour
                 return;
             }
             else
+            {
+                activeIngredients = new HashSet<string>();
                 Debug.Log($"Não encontrou receita");
+            }
 
         }
     }
