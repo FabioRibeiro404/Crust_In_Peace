@@ -24,11 +24,16 @@ public class AttributeRecipe : MonoBehaviour
     {
         foreach (RecipesData recipe in allRecipes)
         {
-            Debug.LogWarning(recipe.name);
+            Debug.LogWarning($"Verificando receita: {recipe.name}");
             HashSet<string> ingredientsRecipe = new HashSet<string>();
 
             foreach (var ingredient in recipe.ingredients)
             {
+                if (ingredient?.ingredients == null)
+                {
+                    Debug.LogError($"Ingrediente nulo encontrado na receita: {recipe.name}");
+                    continue;
+                }
                 ingredientsRecipe.Add(ingredient.ingredients.name);
             }
 
@@ -39,12 +44,8 @@ public class AttributeRecipe : MonoBehaviour
                 activeIngredients.Clear();
                 return;
             }
-            else
-            {
-                activeIngredients = new HashSet<string>();
-                Debug.Log($"Não encontrou receita");
-            }
-
         }
+
+        Debug.Log($"Nenhuma receita correspondente encontrada.");
     }
 }

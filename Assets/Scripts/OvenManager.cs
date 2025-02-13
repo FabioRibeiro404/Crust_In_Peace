@@ -22,7 +22,7 @@ public class OvenManager : MonoBehaviour
                     materialPizza = child.GetComponent<Renderer>();
                 if (child.name == "Cheese")
                     cheese = child.gameObject;
-                if (child.name == "Cheeses")
+                if (child.name == "Cheeses" && cheese.activeSelf)
                     rawCheese = child.gameObject;
             }
 
