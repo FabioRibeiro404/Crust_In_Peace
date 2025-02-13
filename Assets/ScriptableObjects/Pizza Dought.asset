@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3767db711413341a053aa426f6f41c, type: 3}
   m_Name: Pizza Dought
   m_EditorClassIdentifier: 
+  ingredientIcon: {fileID: 21300000, guid: 0057b167fbf4bd84b8515b1a4e261798, type: 3}
   ingredientName: Pizza Dought
