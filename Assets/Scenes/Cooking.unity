@@ -216,12 +216,12 @@ GameObject:
   - component: {fileID: 21954025}
   - component: {fileID: 21954027}
   - component: {fileID: 21954026}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Visual
   m_TagString: Sauce Swap Mud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &21954025
 Transform:
@@ -929,7 +929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 125865221}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Attach Point
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -1350,7 +1350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 204351366}
   - component: {fileID: 204351367}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 224949283}
   - component: {fileID: 224949285}
   - component: {fileID: 224949284}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6738,12 +6738,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 455497547725423405, guid: 793bb5cef89673d4f8484c7a0d6cdaa1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 794894936573249960, guid: 793bb5cef89673d4f8484c7a0d6cdaa1, type: 3}
       propertyPath: m_Name
       value: Pizza Base
       objectReference: {fileID: 0}
     - target: {fileID: 794894936573249960, guid: 793bb5cef89673d4f8484c7a0d6cdaa1, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101031220419945482, guid: 793bb5cef89673d4f8484c7a0d6cdaa1, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6310848494344326390, guid: 793bb5cef89673d4f8484c7a0d6cdaa1, type: 3}
@@ -11997,7 +12005,7 @@ GameObject:
   - component: {fileID: 487720807}
   - component: {fileID: 487720806}
   - component: {fileID: 487720809}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Blood
   m_TagString: Sauce Blood
   m_Icon: {fileID: 0}
@@ -12038,7 +12046,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -12419,6 +12427,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507669693}
   m_CullTransparentMesh: 1
+--- !u!1 &564795566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564795567}
+  m_Layer: 6
+  m_Name: Attach Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &564795567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564795566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1565681527}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &575868594
 GameObject:
   m_ObjectHideFlags: 0
@@ -13069,7 +13108,7 @@ GameObject:
   - component: {fileID: 662044276}
   - component: {fileID: 662044275}
   - component: {fileID: 662044277}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Particles
   m_TagString: Sauce Ectoplasm
   m_Icon: {fileID: 0}
@@ -18050,7 +18089,7 @@ GameObject:
   - component: {fileID: 744175962}
   - component: {fileID: 744175961}
   - component: {fileID: 744175964}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Swap Mud
   m_TagString: Sauce Swap Mud
   m_Icon: {fileID: 0}
@@ -18091,7 +18130,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -18845,6 +18884,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2734315883792958320, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2766569358201078490, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -18875,7 +18918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4053579577978487484, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_PhysicsLayerMask.m_Bits
-      value: 193
+      value: 449
       objectReference: {fileID: 0}
     - target: {fileID: 4065709321064247272, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
@@ -18927,7 +18970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6436123941575367715, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_PhysicsLayerMask.m_Bits
-      value: 193
+      value: 449
       objectReference: {fileID: 0}
     - target: {fileID: 6501755809687671949, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
@@ -19239,7 +19282,7 @@ GameObject:
   - component: {fileID: 870187688}
   - component: {fileID: 870187687}
   - component: {fileID: 870187690}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Hell blood
   m_TagString: Sauce Hell blood
   m_Icon: {fileID: 0}
@@ -19280,7 +19323,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -19459,7 +19502,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 1
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &870187689
@@ -19649,7 +19692,7 @@ GameObject:
   - component: {fileID: 898307537}
   - component: {fileID: 898307536}
   - component: {fileID: 898307538}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Particles
   m_TagString: Sauce Swap Mud
   m_Icon: {fileID: 0}
@@ -24496,7 +24539,7 @@ GameObject:
   - component: {fileID: 934784883}
   - component: {fileID: 934784882}
   - component: {fileID: 934784885}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Ectoplasm
   m_TagString: Sauce Ectoplasm
   m_Icon: {fileID: 0}
@@ -24537,7 +24580,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -24716,7 +24759,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 1
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &934784884
@@ -25158,12 +25201,12 @@ GameObject:
   - component: {fileID: 1079084554}
   - component: {fileID: 1079084556}
   - component: {fileID: 1079084555}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Visual
   m_TagString: Sauce Hell blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1079084554
 Transform:
@@ -25676,7 +25719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1112155803}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Attach Point
   m_TagString: Sauce Swap Mud
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -25709,12 +25752,12 @@ GameObject:
   - component: {fileID: 1120326788}
   - component: {fileID: 1120326790}
   - component: {fileID: 1120326789}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Visual
   m_TagString: Sauce Blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1120326788
 Transform:
@@ -26564,7 +26607,7 @@ GameObject:
   - component: {fileID: 1289317809}
   - component: {fileID: 1289317808}
   - component: {fileID: 1289317807}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sauce Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31811,7 +31854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418254607}
   - component: {fileID: 1418254608}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Audio Source
   m_TagString: Sauce Swap Mud
   m_Icon: {fileID: 0}
@@ -32119,7 +32162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448376272}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Attach Point
   m_TagString: Sauce Ectoplasm
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -32575,6 +32618,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8668195226787890660}
+  - {fileID: 564795567}
   m_Father: {fileID: 543450652996294782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1565681528
@@ -32684,7 +32728,7 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 564795567}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
@@ -33432,7 +33476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645839358}
   - component: {fileID: 1645839359}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33560,7 +33604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1673371115}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Attach Point
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -33695,12 +33739,12 @@ GameObject:
   - component: {fileID: 1685400056}
   - component: {fileID: 1685400058}
   - component: {fileID: 1685400057}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Visual
   m_TagString: Sauce Ectoplasm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1685400056
 Transform:
@@ -35189,7 +35233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091315608}
   - component: {fileID: 2091315609}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Audio Source
   m_TagString: Sauce Ectoplasm
   m_Icon: {fileID: 0}
@@ -37111,7 +37155,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1119415287705165697
 MeshRenderer:
@@ -42837,7 +42881,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4555633677700151482
 Transform:
@@ -48265,7 +48309,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8219399073815605724
 Transform:
