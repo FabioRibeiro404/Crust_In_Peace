@@ -32,7 +32,7 @@ public class OrderCounter : MonoBehaviour
                 FindObjectOfType<NPCSpawner>().ExitNPCMovement();
                 Debug.Log("Entrega correta!");
 
-                DestroyImmediate(other.gameObject);
+                Destroy(other.gameObject);
             }
             else
                 Debug.Log("Pizza errada!");

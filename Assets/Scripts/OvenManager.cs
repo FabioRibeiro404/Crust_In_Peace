@@ -9,12 +9,22 @@ public class OvenManager : MonoBehaviour
 
     private Renderer materialPizza;
     private Coroutine cookingCoroutine;
+    private GameObject cheese;
+    private GameObject rawCheese;
 
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Pizza") && oven.isOn)
         {
-            materialPizza = other.GetComponent<Renderer>();
+            foreach (Transform child in other.transform)
+            {
+                if (child.name == "Pizza Dought")
+                    materialPizza = child.GetComponent<Renderer>();
+                if (child.name == "Cheese")
+                    cheese = child.gameObject;
+                if (child.name == "Cheeses")
+                    rawCheese = child.gameObject;
+            }
 
             if (materialPizza != null && materialPizza.material.color != endColor)
             {
@@ -39,6 +49,12 @@ public class OvenManager : MonoBehaviour
 
         float elapsedTime = 0f;
         Color startColor = materialPizza.material.color;
+
+        if (cheese != null && rawCheese != null)
+        {
+            cheese.SetActive(true);
+            rawCheese.SetActive(false);
+        }
 
         while (elapsedTime < cookingTime)
         {

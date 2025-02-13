@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd3767db711413341a053aa426f6f41c, type: 3}
-  m_Name: Swamp Mud
+  m_Name: Sauce Blood
   m_EditorClassIdentifier: 
-  ingredientIcon: {fileID: 21300000, guid: 86b960620334d9b46bdd66ec06e1c642, type: 3}
-  ingredientName: Swamp Mud
+  ingredientIcon: {fileID: 21300000, guid: b771157a9ac3b9149960f826d0c36132, type: 3}
+  ingredientName: Sauce Blood

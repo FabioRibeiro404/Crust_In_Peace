@@ -37,8 +37,10 @@ public class PizzaBuilder : MonoBehaviour
                     child.gameObject.SetActive(true);
 
                 Destroy(other.gameObject);
+
+                if (child.CompareTag("Ingredients") && child.gameObject.activeSelf)
+                    attribute.AddIngredient(child.name);
             }
-            attribute.CheckIngredients();
         }
     }
 }

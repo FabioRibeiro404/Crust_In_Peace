@@ -931,7 +931,7 @@ GameObject:
   - component: {fileID: 125865221}
   m_Layer: 8
   m_Name: Attach Point
-  m_TagString: Untagged
+  m_TagString: Sauce Hell blood
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -944,13 +944,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125865220}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.036000058, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 870187686}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &148694209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1352,7 @@ GameObject:
   - component: {fileID: 204351367}
   m_Layer: 8
   m_Name: Audio Source
-  m_TagString: Untagged
+  m_TagString: Sauce Hell blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1480,9 +1480,10 @@ GameObject:
   - component: {fileID: 224949283}
   - component: {fileID: 224949285}
   - component: {fileID: 224949284}
+  - component: {fileID: 224949286}
   m_Layer: 7
   m_Name: Sauce Particles
-  m_TagString: Untagged
+  m_TagString: Sauce Blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6302,6 +6303,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &224949286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224949282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd795534cf769c8498e5a5ec3f69dbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &296703153
 GameObject:
   m_ObjectHideFlags: 0
@@ -25726,13 +25739,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112155802}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.036000058, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 744175960}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1120326787
 GameObject:
   m_ObjectHideFlags: 0
@@ -26599,9 +26612,10 @@ GameObject:
   - component: {fileID: 1289317809}
   - component: {fileID: 1289317808}
   - component: {fileID: 1289317807}
+  - component: {fileID: 1289317810}
   m_Layer: 7
   m_Name: Sauce Particles
-  m_TagString: Untagged
+  m_TagString: Sauce Hell blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30446,7 +30460,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -31421,6 +31435,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 870187686}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1289317810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289317806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd795534cf769c8498e5a5ec3f69dbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1315613642
 GameObject:
   m_ObjectHideFlags: 0
@@ -32169,13 +32195,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448376271}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.036, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 934784881}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1458570192
 GameObject:
   m_ObjectHideFlags: 0
@@ -32591,7 +32617,7 @@ GameObject:
   - component: {fileID: 1565681532}
   m_Layer: 6
   m_Name: Rolling_Pin
-  m_TagString: Untagged
+  m_TagString: Roll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33470,7 +33496,7 @@ GameObject:
   - component: {fileID: 1645839359}
   m_Layer: 8
   m_Name: Audio Source
-  m_TagString: Untagged
+  m_TagString: Sauce Blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33598,7 +33624,7 @@ GameObject:
   - component: {fileID: 1673371115}
   m_Layer: 8
   m_Name: Attach Point
-  m_TagString: Untagged
+  m_TagString: Sauce Blood
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33611,13 +33637,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673371114}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.036000013, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 487720805}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1683795603
 GameObject:
   m_ObjectHideFlags: 0

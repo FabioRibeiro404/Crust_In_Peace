@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd3767db711413341a053aa426f6f41c, type: 3}
-  m_Name: Pepperoni
+  m_Name: Sauce Swap Mud
   m_EditorClassIdentifier: 
-  ingredientIcon: {fileID: 21300000, guid: 7df4ffb09eda4f24bad6f381e60be77a, type: 3}
-  ingredientName: Pepperoni
+  ingredientIcon: {fileID: 21300000, guid: 86b960620334d9b46bdd66ec06e1c642, type: 3}
+  ingredientName: Sauce Swap Mud

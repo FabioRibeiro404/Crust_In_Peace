@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd3767db711413341a053aa426f6f41c, type: 3}
-  m_Name: Ectoplasm
+  m_Name: Cheeses
   m_EditorClassIdentifier: 
-  ingredientIcon: {fileID: 21300000, guid: c260436d569d02c4580d72ce9e71d49e, type: 3}
-  ingredientName: Ectoplasm
+  ingredientIcon: {fileID: 21300000, guid: d090345094032254ea2c90911078b6d3, type: 3}
+  ingredientName: Cheeses

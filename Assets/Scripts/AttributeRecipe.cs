@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class AttributeRecipe : MonoBehaviour
@@ -7,46 +6,42 @@ public class AttributeRecipe : MonoBehaviour
     [SerializeField] private List<RecipesData> allRecipes;
     public RecipesData _recipe;
 
-    public void CheckIngredients()
+    private HashSet<string> activeIngredients = new HashSet<string>();
+
+    public void AddIngredient(string ingredientName)
     {
-        List<string> activeIngredients = new List<string>();
-
-        foreach (Transform child in transform)
+        if (!activeIngredients.Contains(ingredientName))
         {
-            if (child.gameObject.activeSelf)
-            {
-                activeIngredients.Add(child.gameObject.name);
-            }
+            activeIngredients.Add(ingredientName);
+            Debug.Log($"Ingrediente adicionado: {ingredientName}");
         }
 
-        _recipe = FindMatchingRecipe(activeIngredients);
-
-        if (_recipe != null)
-        {
-            Debug.Log("Receita Identificada: " + _recipe.recipeName);
-        }
-        else
-        {
-            Debug.Log("Nenhuma receita correspondente encontrada.");
-        }
+        if (activeIngredients.Count == 5)
+            CheckIngredients();
     }
 
-    private RecipesData FindMatchingRecipe(List<string> activeIngredients)
+    private void CheckIngredients()
     {
-        foreach (var recipe in allRecipes)
+        foreach (RecipesData recipe in allRecipes)
         {
-            List<string> recipeIngredients = new List<string>();
+            Debug.LogWarning(recipe.name);
+            HashSet<string> ingredientsRecipe = new HashSet<string>();
 
             foreach (var ingredient in recipe.ingredients)
             {
-                recipeIngredients.Add(ingredient.ingredients.name);
+                ingredientsRecipe.Add(ingredient.ingredients.name);
             }
 
-            if (activeIngredients.Count == recipeIngredients.Count && !recipeIngredients.Except(activeIngredients).Any())
+            if (activeIngredients.SetEquals(ingredientsRecipe))
             {
-                return recipe;
+                _recipe = recipe;
+                Debug.Log($"Receita encontrada: {_recipe.name}");
+                activeIngredients.Clear();
+                return;
             }
+            else
+                Debug.Log($"Não encontrou receita");
+
         }
-        return null;
     }
 }

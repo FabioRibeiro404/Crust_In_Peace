@@ -14,10 +14,11 @@ public class ResetPosition : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, initialPosition) > maxDistance)
+        if (Vector3.Distance(transform.position, initialPosition) > maxDistance 
+            && gameObject.CompareTag("Sauces") || gameObject.CompareTag("Roll")
+            || gameObject.CompareTag("PizzaBox"))
             ResetObject();
-
-        if (transform.position.y <= 0.20f)
+        else if (transform.position.y <= 0.20f)
             Destroy(gameObject);
     }
 

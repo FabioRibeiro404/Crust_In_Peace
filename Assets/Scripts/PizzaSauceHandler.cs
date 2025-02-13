@@ -7,15 +7,9 @@ public class PizzaSauceHandler : MonoBehaviour
         if (other.CompareTag("Pizza"))
         {
             foreach (Transform child in other.transform)
-                child.gameObject.SetActive(false);
-
-            foreach (Transform child in other.transform)
             {
                 if (gameObject.CompareTag("Sauce Ectoplasm") && child.name.Equals("Sauce Ectoplasm"))
-                {
                     child.gameObject.SetActive(true);
-                    Debug.LogWarning("Particulas colidem");
-                }
 
                 if (gameObject.CompareTag("Sauce Swap Mud") && child.name.Equals("Sauce Swap Mud"))
                     child.gameObject.SetActive(true);

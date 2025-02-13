@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 7221594336524250359}
   m_Layer: 7
   m_Name: Sauce Blood from Hell
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 405832234865306608}
   m_Layer: 7
   m_Name: Sauce Blood
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 2456180802704280766}
   m_Layer: 7
   m_Name: Bugs
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -853,6 +853,7 @@ Transform:
   - {fileID: 7677836630070909092}
   - {fileID: 8667228990085314816}
   - {fileID: 4630707529181886520}
+  - {fileID: 4098850705722739104}
   - {fileID: 6259626720345897906}
   - {fileID: 4107876595038973884}
   - {fileID: 8353045224658388973}
@@ -1550,7 +1551,7 @@ GameObject:
   - component: {fileID: 1949458517113509109}
   m_Layer: 7
   m_Name: Sauce Ectoplasm
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1980,7 +1981,7 @@ GameObject:
   - component: {fileID: 4989513749982040836}
   m_Layer: 7
   m_Name: Brains
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2191,7 +2192,7 @@ GameObject:
   - component: {fileID: 4063826609826654403}
   m_Layer: 7
   m_Name: Pepperonis
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2232,8 +2233,8 @@ GameObject:
   - component: {fileID: 2409755959945871255}
   - component: {fileID: 2746316308188458273}
   m_Layer: 7
-  m_Name: Visual
-  m_TagString: Pizza
+  m_Name: Pizza Dought
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2511,7 +2512,7 @@ GameObject:
   - component: {fileID: 4107876595038973884}
   m_Layer: 7
   m_Name: Eyes
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2812,7 +2813,7 @@ GameObject:
   - component: {fileID: 841566542006009702}
   m_Layer: 7
   m_Name: Sauce Swap Mud
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3419,7 +3420,7 @@ GameObject:
   - component: {fileID: 8353045224658388973}
   m_Layer: 7
   m_Name: Cheeses
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3548,7 +3549,7 @@ GameObject:
   - component: {fileID: 4760594804610622834}
   m_Layer: 7
   m_Name: Dirt
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4407,6 +4408,92 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8135507390117710207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4098850705722739104}
+  - component: {fileID: 4962607320250618629}
+  - component: {fileID: 4312249862194861365}
+  m_Layer: 7
+  m_Name: Cheese
+  m_TagString: Ingredients
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4098850705722739104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8135507390117710207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.6866969, y: -0.16866356, z: 0.16866356, w: 0.6866969}
+  m_LocalPosition: {x: 0, y: 0.012400031, z: 0}
+  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 6310848494344326390}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 27.599}
+--- !u!33 &4962607320250618629
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8135507390117710207}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4312249862194861365
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8135507390117710207}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 95265e91cf328de49baa3668899352ca, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8218974727289887389
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,7 +4853,7 @@ GameObject:
   - component: {fileID: 6259626720345897906}
   m_Layer: 7
   m_Name: Fingers
-  m_TagString: Untagged
+  m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
