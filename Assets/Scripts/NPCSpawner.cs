@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class NPCSpawner : MonoBehaviour
 {
@@ -15,10 +14,13 @@ public class NPCSpawner : MonoBehaviour
     private Queue<NPC> npcQueue = new Queue<NPC>();
     public NPC currentNPC;
     private GameObject npcObj;
+    private int activeNPCCount = 0;
+    public int npcRemoved;
 
     private void Start()
     {
         StartCoroutine(SpawnNPCs());
+        npcRemoved = maxNPCs;
     }
 
     private IEnumerator SpawnNPCs()
@@ -27,8 +29,10 @@ public class NPCSpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnInterval);
 
-            if (npcQueue.Count < maxNPCs)
+            if (activeNPCCount < maxNPCs)
+            {
                 SpawnRandomNPC();
+            }
         }
     }
 
@@ -39,11 +43,13 @@ public class NPCSpawner : MonoBehaviour
         NPC newNPC = npcObj.GetComponent<NPC>();
 
         npcQueue.Enqueue(newNPC);
+        activeNPCCount++;
 
         if (currentNPC == null)
+        {
             MoveNextNPC();
+        }
     }
-
 
     public void MoveNextNPC()
     {
@@ -57,20 +63,32 @@ public class NPCSpawner : MonoBehaviour
     private void StartNPCMovement()
     {
         if (currentNPC != null)
+        {
             currentNPC.GoToBalcony(balcony);
+        }
     }
-
 
     public void ExitNPCMovement()
     {
         if (currentNPC != null)
+        {
             currentNPC.GoExit(exitPoint);
+            StartCoroutine(DestroyNPC(currentNPC.gameObject));
+        }
 
         currentNPC = null;
-
         MoveNextNPC();
     }
 
+    private IEnumerator DestroyNPC(GameObject npcObj)
+    {
+        yield return new WaitForSeconds(2f);
+        if (npcObj != null)
+        {
 
+            Destroy(npcObj);
+            npcRemoved--;
+        }
 
+    }
 }

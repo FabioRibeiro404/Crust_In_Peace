@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 615481022103718094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.047, z: 0}
+  m_LocalPosition: {x: 0, y: 0.003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -144,8 +144,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.35883987, y: 0.15364623, z: 0.37739563}
-  m_Center: {x: -0.055077374, y: 0.05573249, z: 0.024093628}
+  m_Size: {x: 0.43172383, y: 0.020332456, z: 0.33764076}
+  m_Center: {x: -0.018635392, y: -0.0023937821, z: 0.004216194}
 --- !u!1 &1828391249346257050
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ Transform:
   m_GameObject: {fileID: 2841860509251159966}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0169, z: -0.058000565}
+  m_LocalPosition: {x: 0, y: -0.0008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -392,7 +392,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6347799377788190561, guid: b9e3e6061be7d2e429662a0169d07fa8, type: 3}
 --- !u!1 &7138012315661948012

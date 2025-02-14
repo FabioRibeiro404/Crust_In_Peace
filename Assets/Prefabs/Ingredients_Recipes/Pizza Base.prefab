@@ -4420,7 +4420,7 @@ GameObject:
   - component: {fileID: 4962607320250618629}
   - component: {fileID: 4312249862194861365}
   m_Layer: 7
-  m_Name: Cheese
+  m_Name: Melted Cheese
   m_TagString: Ingredients
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

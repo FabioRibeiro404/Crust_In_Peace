@@ -9,8 +9,8 @@ public class OvenManager : MonoBehaviour
 
     private Renderer materialPizza;
     private Coroutine cookingCoroutine;
-    private GameObject cheese;
-    private GameObject rawCheese;
+    public GameObject cheese;
+    public GameObject rawCheese;
 
     private void OnTriggerStay(Collider other)
     {
@@ -20,10 +20,10 @@ public class OvenManager : MonoBehaviour
             {
                 if (child.name == "Pizza Dought")
                     materialPizza = child.GetComponent<Renderer>();
-                if (child.name == "Cheese")
-                    cheese = child.gameObject;
-                if (child.name == "Cheeses" && cheese.activeSelf)
+                if (child.name == "Cheeses")
                     rawCheese = child.gameObject;
+                if (child.name == "Melted Cheese")
+                    cheese = child.gameObject;
             }
 
             if (materialPizza != null && materialPizza.material.color != endColor)
@@ -50,10 +50,20 @@ public class OvenManager : MonoBehaviour
         float elapsedTime = 0f;
         Color startColor = materialPizza.material.color;
 
-        if (cheese != null && rawCheese != null)
+        if (rawCheese != null && rawCheese.activeSelf)
         {
-            cheese.SetActive(true);
-            rawCheese.SetActive(false);
+            if (cheese != null)
+            {
+                cheese.SetActive(true);
+                rawCheese.SetActive(false);
+
+                AttributeRecipe attribute = pizza.GetComponent<AttributeRecipe>();
+                if (attribute != null)
+                {
+                    attribute.RemoveIngredient("Cheeses");
+                    attribute.AddIngredient("Melted Cheese");
+                }
+            }
         }
 
         while (elapsedTime < cookingTime)

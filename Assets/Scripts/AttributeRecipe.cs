@@ -48,4 +48,13 @@ public class AttributeRecipe : MonoBehaviour
 
         Debug.Log($"Nenhuma receita correspondente encontrada.");
     }
+
+    public void RemoveIngredient(string ingredientName)
+    {
+        if (activeIngredients.Contains(ingredientName))
+        {
+            activeIngredients.Remove(ingredientName);
+            Debug.Log($"Ingrediente removido: {ingredientName}");
+        }
+    }
 }
